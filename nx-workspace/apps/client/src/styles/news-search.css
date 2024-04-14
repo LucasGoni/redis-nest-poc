@@ -1,0 +1,108 @@
+.search-fields {
+    display: flex; 
+    flex-wrap: wrap; 
+    gap: 10px;
+    justify-content: center;
+    margin-bottom: 20px;
+    padding-top: 40px;;
+  }
+  
+  .button-search {
+    background-color: #0a4a80;
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-bottom: 10px;
+  }
+  
+  .button-search:hover {
+    background-color: #055b98;
+  }
+  
+  .performance-metrics {
+    background-color: #d4c9c98d;
+    border-left: 5px solid #0a4a80;
+    padding: 10px;
+    margin: 20px auto;
+    max-width: 300px;
+    width: 100%;
+    box-sizing: border-box;
+  }
+  
+  /* .news-article {
+    border: 1px solid #dee2e6;
+    padding: 15px;
+    margin-bottom: 15px;
+    border-radius: 5px;
+    transition: transform 0.3s ease;
+    background-color: #d4c9c98d;
+    text-align: center;
+  }
+  
+  .news-article:hover {
+    transform: translateY(-5px);
+  }
+  
+  .news-article h2 {
+    color: #0a4a80;
+  }
+  
+  .news-article p {
+    color: #333;
+  } */
+
+  .news-article {
+    border: 1px solid #dee2e6;
+    padding: 15px;
+    margin-bottom: 15px;
+    border-radius: 5px;
+    transition: transform 0.3s ease;
+    background-color: #d4c9c98d;
+    text-align: center;
+    width: 300px; /* or any fixed width */
+    height: 200px; /* or any fixed height */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between; /* Adjusts spacing around children */
+    overflow: hidden; /* Ensures the content doesn't overflow */
+  }
+  
+  .news-article h2 {
+    color: #0a4a80;
+    margin-bottom: 10px;
+    display: -webkit-box;
+    -webkit-line-clamp: 2; /* Limit text to 2 lines */
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+  
+  .news-article p {
+    color: #333;
+    display: -webkit-box;
+    -webkit-line-clamp: 3; /* Limit text to 3 lines */
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    margin-bottom: 10px;
+  }
+  
+  .news-article:hover {
+    transform: translateY(-5px);
+    overflow: auto; /* Allows scrolling on hover */
+  }
+  
+  .news-search {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 70px;
+  }
+
+  .logo {
+    width: 700px; /* Set the desired width */
+    height: auto; /* Maintain aspect ratio */
+  }
